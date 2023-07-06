@@ -1,0 +1,35 @@
+﻿<Page
+    x:Class="DuplicateDeleter.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:DuplicateDeleter"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Width="620" Height="640">
+    <Grid Background="#FF2B2A2A">
+        <Button Content="Run" x:Name="button1"  Margin="40,38,0,0" VerticalAlignment="Top" Height="97" Width="200" CornerRadius="20" Click="Button_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF98D220"/>
+                    <GradientStop Color="#FF119E3A" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="40,154,0,0" TextWrapping="Wrap" Text="&quot;C:\Temp\Images&quot;" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" Width="195" d:LayoutRounding="Auto" TextChanged="TextBox_TextChanged">
+            <TextBox.RenderTransform>
+                <CompositeTransform Rotation="0.0"/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button x:Name="button2" Content="Set" Margin="260,154,0,0" VerticalAlignment="Top" Click="Button_Click_1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFEBED11" Offset="0.003"/>
+                    <GradientStop Color="#FF28EA18" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="textblock1" Margin="40,192,321,0" TextWrapping="Wrap" Text="null" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textblock2" HorizontalAlignment="Left" Margin="397,38,0,0" TextWrapping="Wrap" Text="Files:" VerticalAlignment="Top"/>
+        <TextBox x:Name="textbox2" HorizontalAlignment="Left" Margin="438,32,0,0" TextWrapping="Wrap" Text="null" VerticalAlignment="Top" TextChanged="TextBox_TextChanged_1"/>
+    </Grid>
+</Page>
